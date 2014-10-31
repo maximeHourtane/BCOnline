@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // validate recall:
-  $("#recall").validate({
+  $("#recallForm").validate({
     rules: {
       name: "required",
       phone: "required",
@@ -30,13 +30,19 @@ $(document).ready(function() {
   });
 
   // validate contact:
-  $("#contact").validate({
+  $("#contactForm").validate({
     rules: {
       name: "required",
+      mail: "required",
       phone: "required",
+      message: "required",
       name: {
         required: true,
         minlength: 2
+      },
+      mail: {
+        required: true,
+        minlength: 8
       },
       phone: {
         required: true,

@@ -33,6 +33,40 @@ a.btnPrimary, a.btnPrimary:hover, a.btnPrimary:active, input[type="submit"].btnP
 	color: #4ECCC3;
 }
 
+/* Errors */
+
+label.error {
+  color: #FFF;
+  padding: 7px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  position: relative;
+  top: 15px;
+}
+
+label.error:after, label.error:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+label.error:after {
+  border-color: rgba(255, 101, 54, 0);
+  border-width: 2px;
+  margin-left: -2px;
+}
+label.error:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
 /* Colors */
 
 .darkBlueBG { background-color: #1A2732; }
