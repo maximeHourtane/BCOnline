@@ -44,22 +44,19 @@ nav, .callToAction {
 	top: 18px;
 }
 
-#phoneNumberInfo {
-	line-height: 24px;
-	vertical-align: bottom;
+#phoneNumber {
+	padding-top: 8px;
+	line-height: 1.1em;
+	vertical-align: middle;
 	text-align: center;
 	font-size: 1em;
 	font-weight: 700;
 	margin: 0px;
+	color: #4ECCC3;
 }
 
-#phoneNumberCost {
-	line-height: 20px;
-	vertical-align: top;
-	text-align: center;
+#phoneNumber span {
 	font-size: 0.9em;
-	font-weight: 500;
-	margin: 0px;
 }
 
 #main{
