@@ -73,7 +73,7 @@ img {	max-width: 100%; }
 .whiteHover:hover {
 	background-color: white;
 	transition: all 0.11s ease-in;
- }
+}
 
 /* Helpers */
 
