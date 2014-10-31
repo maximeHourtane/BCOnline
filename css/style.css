@@ -41,11 +41,11 @@ a.btnPrimary, a.btnPrimary:hover, a.btnPrimary:active, input[type="submit"].btnP
 
 .fuckMathieuBiach:hover { color: #51626F; }
 
+.darkDarkBlueBG { background-color: #0f171e; height: 500px; }
+
 /* Colors */
 
-.darkBlueBG { background-color: #233443; }
-
-.darkDarkBlueBG { background-color: #1A2732; height: 500px;}
+.darkBlueBG { background-color: #233443; } /* old #1A2732 */
 
 .greyBG { background-color: #51626F; }
 
