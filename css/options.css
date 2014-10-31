@@ -31,15 +31,14 @@ nav li:last-of-type { border: none; left: -1px;}*/
 
 /* Delete topMargin15 line 39 in index.html */
 
-/*
-header {
+
+.compressedHeader {
 	height: 80px;
 	max-height: 80px;
 }
 
-#logo {
+.compressedHeader #logo {
 	width: 80%;
 	height: 80%;
 	margin-top: 8px;
 }
-*/

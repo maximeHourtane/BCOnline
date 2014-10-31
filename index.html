@@ -14,6 +14,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/forms.js"></script>
 
@@ -32,30 +34,34 @@
   <!--<![endif]-->
 
     <!-- Header -->
-    <header class="container">
-      <div class="row topMargin15">
-        <div  id="logo" class="col-md-1 noPadding">
-          <img src="img/logo.jpg" width="98" height="80">
-        </div>
+    <header>
+      <div class="container noPadding">
 
-        <nav class="col-md-8 pullLeft bLH44">
-          <ul>
-            <li><a class="btn" data-scroll href="#what">Services</a></li>
-            <li><a class="btn" data-scroll href="#who">Qui sommes nous&thinsp;?</a></li>
-            <li><a class="btn" data-scroll href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="row topMargin15">
+          <div class="col-md-1 noPadding">
+            <img id="logo" src="img/logo.jpg" width="98" height="80">
+          </div>
 
-        <div class="col-md-3 callToAction noPadding">
-          <div class="row">
-            <div class="col-xs-6 bH44">
-              <p id="phoneNumber" class="bH44">(+33) 459 630 632<br><span>numéro non surtaxé</span></p>
-            </div>
-            <div class="col-xs-6">
-              <a data-scroll class="btn btnPrimary pullRight" href="#recall">Rappel gratuit</a>
+          <nav class="col-md-8 pullLeft bLH44">
+            <ul>
+              <li><a class="btn" data-scroll href="#what">Services</a></li>
+              <li><a class="btn" data-scroll href="#who">Qui sommes nous&thinsp;?</a></li>
+              <li><a class="btn" data-scroll href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="col-md-3 callToAction noPadding">
+            <div class="row">
+              <div class="col-xs-6 bH44">
+                <p id="phoneNumber" class="bH44">(+33) 459 630 632<br><span>numéro non surtaxé</span></p>
+              </div>
+              <div class="col-xs-6">
+                <a data-scroll class="btn btnPrimary pullRight" href="#recall">Rappel gratuit</a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </header>
 
@@ -63,7 +69,7 @@
     <div id="main">
 
       <section class="noPadding"> 
-        <div class="WideImage">
+        <div class="WideImage topMargin80">
           <img src="img/banner/image(1).jpg">
         </div>
       </section>
@@ -221,7 +227,7 @@
         </div>
       </section>
 
-      <section class="lightGreyBG lightBG">
+      <section id="contact" class="lightGreyBG lightBG">
         <div class="container">
 
           <div class="row">

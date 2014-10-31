@@ -22,8 +22,12 @@ h1{
 }
 
 header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 	height: 110px;
 	max-height: 110px;
+	background: #FFF;
 }
 
 section {
@@ -81,7 +85,7 @@ img {	max-width: 100%; }
 
 /* hover-bold-title & whiteHover */
 
-#hoverBold-1, #hoverBold-2, #hoverBold-3, .zoomImg, .whiteHover:hover .zoomImg { transition: all 0.11s ease-in; }
+#hoverBold-1, #hoverBold-2, #hoverBold-3, .zoomImg, .whiteHover:hover .zoomImg , .compressedHeader, header, header { transition: all 0.11s ease-in; }
 
 .zoomImg { padding: 8px; }
 
@@ -111,6 +115,8 @@ img {	max-width: 100%; }
 .topMargin15 { margin-top: 15px; }
 
 .topMargin26 { margin-top: 26px; }
+
+.topMargin80 { padding-top: 80px; }
 
 /* Input */
 
