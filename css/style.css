@@ -5,6 +5,12 @@ h1 {
 	font-size: 1.7em;
 }
 
+.lightBG h1 {
+	font-weight: 500;
+	color: #4ECCC3;
+	text-align: left;
+}
+
 p {
   font-size: 16px;
 }
@@ -13,9 +19,9 @@ p {
 
 nav a, nav a:hover, nav a:visited {	color: black; }
 
-nav a:hover {	background-color: #DFE5E6; }
+nav a:hover {	background-color: #EBEFF0; }
 
-nav a:active {	background-color: #c8cecf;	}
+nav a:active {	background-color: #DFE5E6;	}
 
 .btnPrimary {	background-color: #4ECCC3; }
 
@@ -33,15 +39,18 @@ a.btnPrimary, a.btnPrimary:hover, a.btnPrimary:active, input[type="submit"].btnP
 	color: #4ECCC3;
 }
 
+.fuckMathieuBiach:hover { color: #51626F; }
+
 /* Colors */
 
-.darkBlueBG { background-color: #1A2732; }
+.darkBlueBG { background-color: #233443; }
+.darkBluBG { background-color: #1A2732; }
 
 .greyBG { background-color: #51626F; }
 
-.lightGreyBG { background-color: #DFE5E6; }
+.lightGreyBG { background-color: #EBEFF0; }
 
-.lightGreyBGhover { background-color: #c8cecf; }
+.lightGreyBGhover { background-color: #DFE5E6; }
 
 .redBG { background-color: #D3222A; }
 

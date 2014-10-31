@@ -43,3 +43,9 @@ header {
 	margin-top: 8px;
 }
 */
+
+.gMap {
+	height: 400px;
+	width: 100%;
+	background-color: Gold;
+ }
