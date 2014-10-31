@@ -167,8 +167,9 @@
           </div>
 
           <div class="row">
+            <div class="col-md-2"></div>
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8">
               
               <form action="mail.php" id="recall" method="post">
                 <div class="row topMargin26">
@@ -186,7 +187,38 @@
 
                 </div>
 
+                <div class="row topMargin26">
+
+                  <div class="col-md-2 col-md-offset-1">
+                    Je suis disponible :
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <input type="checkbox" class="form-hours" name="hour[]" id="morning" value="matin" checked>
+                    <label for="morning">matin (9h-12h)</label>
+                  </div>
+
+                  <div class="col-md-2">
+                    <input type="checkbox" class="form-hours" name="hour[]" id="noon" value="midi" checked>
+                    <label for="noon">midi (12h-14h)</label>
+                  </div>
+
+                  <div class="col-md-2">
+                    <input type="checkbox" class="form-hours" name="hour[]" id="afternoon" value="après-midi" checked>
+                    <label for="afternoon">après-midi (14h-18h)</label>
+                  </div>
+
+                  <div class="col-md-2">
+                    <input type="checkbox" class="form-hours" name="hour[]" id="evening" value="soir" checked>
+                    <label for="evening">soir (18h-20h)</label>
+                  </div>
+
+                </div>
+              </form>
+
             </div>
+
+            <div class="col-md-2"></div>
           </div>
 
           <div>
@@ -206,8 +238,7 @@
           </div>
 
           <div class="row topMargin26">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-md-offset-2">
               <form action="mail.php" id="contact" method="post">
 
                 <div class="row">
@@ -235,7 +266,6 @@
                 </div>
               </form>
             </div>
-            <div class="col-md-2"></div>
           </div>
 
       </section>
