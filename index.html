@@ -16,14 +16,14 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/hover-bold-title.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/main.js"></script>
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script>
-      smoothScroll.init();
-    </script>
   </head>
   
   <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
@@ -101,7 +101,6 @@
                 <div class="zoomImg">
                   <img src="img/garantie.jpg" alt="Garantie">
                 </div>
-                <h2>Garanties</h2>
                 <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
               </div>
             </div>
@@ -111,7 +110,6 @@
                 <div class="zoomImg">
                   <img src="img/qualite.jpg" alt="Qualité">
                 </div>
-                <h2>Qualité</h2>
                 <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
               </div>
             </div>
@@ -121,7 +119,6 @@
                 <div class="zoomImg">
                   <img src="img/expertise.jpg" alt="Expertise">
                 </div>
-                <h2>Expertise</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
               </div>
             </div>
@@ -190,10 +187,10 @@
 
 
                 </div>
-                <div class="row topMargin15">
-                  <div class="col-md-1"></div>
 
-                  <div class="col-md-2">
+                <div class="row topMargin26">
+
+                  <div class="col-md-2 col-md-offset-1">
                     Je suis disponible :
                   </div>
                   
@@ -217,7 +214,6 @@
                     <label for="evening">soir (18h-20h)</label>
                   </div>
 
-                  <div class="col-md-1"></div>
                 </div>
               </form>
 
@@ -242,36 +238,37 @@
             </div>
           </div>
 
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <form action="mail.php" id="contact" method="post">
+          <div class="row topMargin26">
+            <div class="col-md-8 col-md-offset-2">
+              <form action="mail.php" id="contact" method="post">
 
-            <div class="row">
-              <div class="col-md-4">
-                <input class="fullWidth" type="text" name="name" placeholder="Nom">
-              </div>
-              <div class="col-md-4">
-                <input class="fullWidth" type="text" name="mail" placeholder="Adresse mail">
-              </div>
-              <div class="col-md-4">
-                <input class="fullWidth" type="text" name="phone" placeholder="Téléphone">
-              </div>
-            </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <input class="fullWidth" type="text" name="name" placeholder="Nom">
+                  </div>
+                  <div class="col-md-4">
+                    <input class="fullWidth" type="text" name="mail" placeholder="Adresse mail">
+                  </div>
+                  <div class="col-md-4">
+                    <input class="fullWidth" type="text" name="phone" placeholder="Téléphone">
+                  </div>
+                </div>
 
-            <div class="row topMargin15">
-              <div class="col-md-12">
-                <textarea class="fullWidth" name="message" placeholder="Votre message" cols="50" rows="10"></textarea>
-              </div>
-            </div>
+                <div class="row topMargin15">
+                  <div class="col-md-12">
+                    <textarea class="fullWidth" name="message" placeholder="Votre message" cols="50" rows="10"></textarea>
+                  </div>
+                </div>
 
-            <div class="row topMargin15">
-              <div class="col-md-12">
-                <input class="btn btnPrimary pullRight" type="submit" value="Envoyer ce message" name="contact">
-              </div>
+                <div class="row topMargin15">
+                  <div class="col-md-12">
+                    <input class="btn btnPrimary pullRight" type="submit" value="Envoyer ce message" name="contact">
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
-        <div class="col-md-2"></div>
+          </div>
+
       </section>
 
     </div>

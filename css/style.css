@@ -5,6 +5,10 @@ h1 {
 	font-size: 1.7em;
 }
 
+p {
+  font-size: 16px;
+}
+
 /* Button */
 
 nav a, nav a:hover, nav a:visited {	color: black; }
