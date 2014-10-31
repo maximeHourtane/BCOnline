@@ -40,6 +40,28 @@ textarea {
 	border: none;
 }
 
+nav, .callToAction {
+	top: 18px;
+}
+
+#phoneNumberInfo {
+	line-height: 24px;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+#phoneNumberCost {
+	line-height: 20px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 500;
+	margin: 0px;
+}
+
 #main{
 	display:block;
 	width:100%;
