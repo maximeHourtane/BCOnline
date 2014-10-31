@@ -1,4 +1,4 @@
-$().ready(function() {
+$(document).ready(function() {
   // validate recall:
   $("#recall").validate({
     rules: {
