@@ -1,0 +1,22 @@
+/* !!! put it after :
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css"> in the WWCC_Pro.html file */
+
+/* Font family */
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Navigation separator */
+
+/* nav li{ border-right: 1px solid black; padding-right: 2px; }
+
+nav li:last-of-type { border: none; left: -1px;}*/
+
+/* To put radius to Buttons, Nav a, input*/
+
+.btn, input[type=text] { border-radius: 4px; }
+

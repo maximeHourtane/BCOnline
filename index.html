@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MH Toîtures</title>
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,7 +13,9 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/hover-bold-title.js"></script>
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,18 +72,18 @@
       </section>
 
       <!-- What -->
-      <section id="what" class="darkBlueBG darkBG">
+      <section id="what" class="darkBlueBG darkBG noPadding bLH62">
         <div class="container">
 
           <div class="row">
             <div class="col-md-4 serviceLeft">
-              <h1>rénovation</h1>
+              <h1 id="hoverBold-1">rénovation</h1>
             </div>
             <div class="col-md-4 serviceMiddle">
-              <h1>entretien</h1>
+              <h1 id="hoverBold-2">entretien</h1>
             </div>
             <div class="col-md-4 serviceRight">
-              <h1>installation</h1>
+              <h1 id="hoverBold-3">installation</h1>
             </div>
           </div>
 
@@ -93,22 +96,31 @@
           <div class="row">
 
             <div class="col-md-4">
-              <div class="whiteHover">
-                <img src="img/garantie.jpg" alt="Garantie">
+              <div class="whiteHover" data-element="1">
+                <div class="zoomImg">
+                  <img src="img/garantie.jpg" alt="Garantie">
+                </div>
+                <h2>Garanties</h2>
                 <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
               </div>
             </div>
 
             <div class="col-md-4">
-              <div class="whiteHover">
-                <img src="img/qualite.jpg" alt="Qualité">
+              <div class="whiteHover" data-element="2">
+                <div class="zoomImg">
+                  <img src="img/qualite.jpg" alt="Qualité">
+                </div>
+                <h2>Qualité</h2>
                 <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
               </div>
             </div>
 
             <div class="col-md-4">
-              <div class="whiteHover">
-                <img src="img/expertise.jpg" alt="Expertise">
+              <div class="whiteHover" data-element="3">
+                <div class="zoomImg">
+                  <img src="img/expertise.jpg" alt="Expertise">
+                </div>
+                <h2>Expertise</h2>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
               </div>
             </div>
@@ -118,7 +130,7 @@
       </section>
 
       <!-- Who -->
-      <section id="who" class="darkBlueBG darkBG">
+      <section id="who" class="darkBlueBG darkBG noPadding bLH62">
         <div class="container">
 
           <div class="row">
@@ -229,39 +241,36 @@
             </div>
           </div>
 
-          <div class="row topMargin26">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <form action="mail.php" id="contact" method="post">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form action="mail.php" id="contact" method="post">
 
-                <div class="row">
-                  <div class="col-md-4">
-                    <input class="fullWidth" type="text" name="name" placeholder="Nom">
-                  </div>
-                  <div class="col-md-4">
-                    <input class="fullWidth" type="text" name="mail" placeholder="Adresse mail">
-                  </div>
-                  <div class="col-md-4">
-                    <input class="fullWidth" type="text" name="phone" placeholder="Téléphone">
-                  </div>
-                </div>
-
-                <div class="row topMargin15">
-                  <div class="col-md-12">
-                    <textarea class="fullWidth" name="message" placeholder="Votre message" cols="50" rows="10"></textarea>
-                  </div>
-                </div>
-
-                <div class="row topMargin15">
-                  <div class="col-md-12">
-                    <input class="btn btnPrimary pullRight" type="submit" value="Envoyer ce message" name="contact">
-                  </div>
-                </div>
-              </form>
+            <div class="row">
+              <div class="col-md-4">
+                <input class="fullWidth" type="text" name="name" placeholder="Nom">
+              </div>
+              <div class="col-md-4">
+                <input class="fullWidth" type="text" name="mail" placeholder="Adresse mail">
+              </div>
+              <div class="col-md-4">
+                <input class="fullWidth" type="text" name="phone" placeholder="Téléphone">
+              </div>
             </div>
-            <div class="col-md-2"></div>
-          </div>
-      
+
+            <div class="row topMargin15">
+              <div class="col-md-12">
+                <textarea class="fullWidth" name="message" placeholder="Votre message" cols="50" rows="10"></textarea>
+              </div>
+            </div>
+
+            <div class="row topMargin15">
+              <div class="col-md-12">
+                <input class="btn btnPrimary pullRight" type="submit" value="Envoyer ce message" name="contact">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2"></div>
       </section>
 
     </div>
