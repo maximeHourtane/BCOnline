@@ -42,3 +42,9 @@ nav li:last-of-type { border: none; left: -1px;}*/
 	height: 80%;
 	margin-top: 8px;
 }
+
+.gMap {
+	height: 400px;
+	width: 100%;
+	background-color: Gold;
+ }
